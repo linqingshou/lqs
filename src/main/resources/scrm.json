@@ -1,0 +1,3503 @@
+[
+  {
+    "description": "登陆接口,成功后返回token",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "json": {
+        "username": "yt9999999",
+        "password": "12345a"
+      },
+      "headers": {
+        "content-type": "application/json"
+      }
+    },
+    "response": {
+      "json": {
+        "data": "token_true",
+        "status": 1
+      }
+    }
+  },
+  {
+    "description": "获取用户信息接口",
+    "request": {
+      "uri": "/admin/adminDetails",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": {
+          "authorities": [
+            {
+              "code": "admin_list",
+              "authority": "admin_list"
+            },
+            {
+              "code": "admin_manager",
+              "authority": "admin_manager"
+            },
+            {
+              "code": "admin_manager_child",
+              "authority": "admin_manager_child"
+            },
+            {
+              "code": "after_sale",
+              "authority": "after_sale"
+            },
+            {
+              "code": "asset_details",
+              "authority": "asset_details"
+            },
+            {
+              "code": "asset_details_download",
+              "authority": "asset_details_download"
+            },
+            {
+              "code": "asset_manager",
+              "authority": "asset_manager"
+            },
+            {
+              "code": "asset_msgAccount",
+              "authority": "asset_msgAccount"
+            },
+            {
+              "code": "asset_msgAccount_downloadDetail",
+              "authority": "asset_msgAccount_downloadDetail"
+            },
+            {
+              "code": "asset_msgAccount_downloadRecord",
+              "authority": "asset_msgAccount_downloadRecord"
+            },
+            {
+              "code": "asset_qrcodeAccount",
+              "authority": "asset_qrcodeAccount"
+            },
+            {
+              "code": "asset_qrcodeAccount_download",
+              "authority": "asset_qrcodeAccount_download"
+            },
+            {
+              "code": "asset_substitute",
+              "authority": "asset_substitute"
+            },
+            {
+              "code": "asset_substitute_downloadDetail",
+              "authority": "asset_substitute_downloadDetail"
+            },
+            {
+              "code": "asset_substitute_downloadSimple",
+              "authority": "asset_substitute_downloadSimple"
+            },
+            {
+              "code": "black_list",
+              "authority": "black_list"
+            },
+            {
+              "code": "btn_active_add",
+              "authority": "btn_active_add"
+            },
+            {
+              "code": "btn_active_details",
+              "authority": "btn_active_details"
+            },
+            {
+              "code": "btn_active_edit",
+              "authority": "btn_active_edit"
+            },
+            {
+              "code": "btn_active_end",
+              "authority": "btn_active_end"
+            },
+            {
+              "code": "btn_active_import",
+              "authority": "btn_active_import"
+            },
+            {
+              "code": "btn_active_pass",
+              "authority": "btn_active_pass"
+            },
+            {
+              "code": "btn_active_refuse",
+              "authority": "btn_active_refuse"
+            },
+            {
+              "code": "btn_after_sale_activedetails",
+              "authority": "btn_after_sale_activedetails"
+            },
+            {
+              "code": "btn_after_sale_activedetails_reply",
+              "authority": "btn_after_sale_activedetails_reply"
+            },
+            {
+              "code": "btn_after_sale_add",
+              "authority": "btn_after_sale_add"
+            },
+            {
+              "code": "btn_after_sale_add_single",
+              "authority": "btn_after_sale_add_single"
+            },
+            {
+              "code": "btn_after_sale_audit_no_pass",
+              "authority": "btn_after_sale_audit_no_pass"
+            },
+            {
+              "code": "btn_after_sale_audit_pass",
+              "authority": "btn_after_sale_audit_pass"
+            },
+            {
+              "code": "btn_after_sale_delete",
+              "authority": "btn_after_sale_delete"
+            },
+            {
+              "code": "btn_after_sale_details",
+              "authority": "btn_after_sale_details"
+            },
+            {
+              "code": "btn_after_sale_edit",
+              "authority": "btn_after_sale_edit"
+            },
+            {
+              "code": "btn_after_sale_end",
+              "authority": "btn_after_sale_end"
+            },
+            {
+              "code": "btn_after_sale_export",
+              "authority": "btn_after_sale_export"
+            },
+            {
+              "code": "btn_after_sale_link",
+              "authority": "btn_after_sale_link"
+            },
+            {
+              "code": "btn_after_sale_order_details",
+              "authority": "btn_after_sale_order_details"
+            },
+            {
+              "code": "btn_fans_black",
+              "authority": "btn_fans_black"
+            },
+            {
+              "code": "btn_fans_blackList",
+              "authority": "btn_fans_blackList"
+            },
+            {
+              "code": "btn_fans_details",
+              "authority": "btn_fans_details"
+            },
+            {
+              "code": "btn_fans_tag",
+              "authority": "btn_fans_tag"
+            },
+            {
+              "code": "btn_fans_unBlack",
+              "authority": "btn_fans_unBlack"
+            },
+            {
+              "code": "btn_fans_updateRemark",
+              "authority": "btn_fans_updateRemark"
+            },
+            {
+              "code": "btn_fans_updateTag",
+              "authority": "btn_fans_updateTag"
+            },
+            {
+              "code": "dataAnalysis",
+              "authority": "dataAnalysis"
+            },
+            {
+              "code": "dataAnalysis_imgtext",
+              "authority": "dataAnalysis_imgtext"
+            },
+            {
+              "code": "draw",
+              "authority": "draw"
+            },
+            {
+              "code": "draw_create",
+              "authority": "draw_create"
+            },
+            {
+              "code": "draw_detail",
+              "authority": "draw_detail"
+            },
+            {
+              "code": "draw_detail_inc",
+              "authority": "draw_detail_inc"
+            },
+            {
+              "code": "draw_finish",
+              "authority": "draw_finish"
+            },
+            {
+              "code": "draw_update",
+              "authority": "draw_update"
+            },
+            {
+              "code": "fans_list",
+              "authority": "fans_list"
+            },
+            {
+              "code": "fans_manager",
+              "authority": "fans_manager"
+            },
+            {
+              "code": "fans_memberGrade",
+              "authority": "fans_memberGrade"
+            },
+            {
+              "code": "fans_memberGrade_create",
+              "authority": "fans_memberGrade_create"
+            },
+            {
+              "code": "fans_memberGrade_delete",
+              "authority": "fans_memberGrade_delete"
+            },
+            {
+              "code": "fans_memberGrade_save",
+              "authority": "fans_memberGrade_save"
+            },
+            {
+              "code": "fans_memberGrade_update",
+              "authority": "fans_memberGrade_update"
+            },
+            {
+              "code": "fans_memberTask",
+              "authority": "fans_memberTask"
+            },
+            {
+              "code": "fans_tags",
+              "authority": "fans_tags"
+            },
+            {
+              "code": "index",
+              "authority": "index"
+            },
+            {
+              "code": "integralShop",
+              "authority": "integralShop"
+            },
+            {
+              "code": "integralShop_manage",
+              "authority": "integralShop_manage"
+            },
+            {
+              "code": "integralShop_manage_create",
+              "authority": "integralShop_manage_create"
+            },
+            {
+              "code": "integralShop_manage_detail",
+              "authority": "integralShop_manage_detail"
+            },
+            {
+              "code": "integralShop_manage_putaway",
+              "authority": "integralShop_manage_putaway"
+            },
+            {
+              "code": "integralShop_manage_sellout",
+              "authority": "integralShop_manage_sellout"
+            },
+            {
+              "code": "integralShop_manage_update",
+              "authority": "integralShop_manage_update"
+            },
+            {
+              "code": "integralShop_record",
+              "authority": "integralShop_record"
+            },
+            {
+              "code": "integralShop_record_auditPass",
+              "authority": "integralShop_record_auditPass"
+            },
+            {
+              "code": "integralShop_record_auditUnpass",
+              "authority": "integralShop_record_auditUnpass"
+            },
+            {
+              "code": "integralShop_record_info",
+              "authority": "integralShop_record_info"
+            },
+            {
+              "code": "integralShop_record_orderDetails",
+              "authority": "integralShop_record_orderDetails"
+            },
+            {
+              "code": "integralShop_record_resend",
+              "authority": "integralShop_record_resend"
+            },
+            {
+              "code": "integralShop_record_upload",
+              "authority": "integralShop_record_upload"
+            },
+            {
+              "code": "marketing_manager",
+              "authority": "marketing_manager"
+            },
+            {
+              "code": "marketing_signIn",
+              "authority": "marketing_signIn"
+            },
+            {
+              "code": "mindQrcode",
+              "authority": "mindQrcode"
+            },
+            {
+              "code": "mindQrcode_create",
+              "authority": "mindQrcode_create"
+            },
+            {
+              "code": "mindQrcode_details",
+              "authority": "mindQrcode_details"
+            },
+            {
+              "code": "mindQrcode_update",
+              "authority": "mindQrcode_update"
+            },
+            {
+              "code": "order_activities",
+              "authority": "order_activities"
+            },
+            {
+              "code": "prize",
+              "authority": "prize"
+            },
+            {
+              "code": "prize_coupon",
+              "authority": "prize_coupon"
+            },
+            {
+              "code": "prize_coupon_add",
+              "authority": "prize_coupon_add"
+            },
+            {
+              "code": "prize_coupon_couponRecord",
+              "authority": "prize_coupon_couponRecord"
+            },
+            {
+              "code": "prize_coupon_delete",
+              "authority": "prize_coupon_delete"
+            },
+            {
+              "code": "prize_coupon_inc",
+              "authority": "prize_coupon_inc"
+            },
+            {
+              "code": "prize_coupon_resend",
+              "authority": "prize_coupon_resend"
+            },
+            {
+              "code": "prize_coupon_settlement",
+              "authority": "prize_coupon_settlement"
+            },
+            {
+              "code": "prize_goods",
+              "authority": "prize_goods"
+            },
+            {
+              "code": "prize_goods_create",
+              "authority": "prize_goods_create"
+            },
+            {
+              "code": "prize_goods_delete",
+              "authority": "prize_goods_delete"
+            },
+            {
+              "code": "prize_goods_goodDetail",
+              "authority": "prize_goods_goodDetail"
+            },
+            {
+              "code": "prize_goods_inc",
+              "authority": "prize_goods_inc"
+            },
+            {
+              "code": "prize_goods_record",
+              "authority": "prize_goods_record"
+            },
+            {
+              "code": "prize_goods_record_checkInfo",
+              "authority": "prize_goods_record_checkInfo"
+            },
+            {
+              "code": "prize_goods_record_submitLog",
+              "authority": "prize_goods_record_submitLog"
+            },
+            {
+              "code": "prize_goods_resend",
+              "authority": "prize_goods_resend"
+            },
+            {
+              "code": "prize_integral",
+              "authority": "prize_integral"
+            },
+            {
+              "code": "prize_integral_config",
+              "authority": "prize_integral_config"
+            },
+            {
+              "code": "prize_integral_grant",
+              "authority": "prize_integral_grant"
+            },
+            {
+              "code": "prize_integral_grant_restart",
+              "authority": "prize_integral_grant_restart"
+            },
+            {
+              "code": "prize_integral_statistics",
+              "authority": "prize_integral_statistics"
+            },
+            {
+              "code": "prize_integral_used",
+              "authority": "prize_integral_used"
+            },
+            {
+              "code": "prize_red",
+              "authority": "prize_red"
+            },
+            {
+              "code": "prize_red_add",
+              "authority": "prize_red_add"
+            },
+            {
+              "code": "prize_red_delete",
+              "authority": "prize_red_delete"
+            },
+            {
+              "code": "prize_red_inc",
+              "authority": "prize_red_inc"
+            },
+            {
+              "code": "prize_red_redRecord",
+              "authority": "prize_red_redRecord"
+            },
+            {
+              "code": "prize_red_resend",
+              "authority": "prize_red_resend"
+            },
+            {
+              "code": "prize_red_settlement",
+              "authority": "prize_red_settlement"
+            },
+            {
+              "code": "qrcode_active",
+              "authority": "qrcode_active"
+            },
+            {
+              "code": "qrcode_active_analyze",
+              "authority": "qrcode_active_analyze"
+            },
+            {
+              "code": "qrcode_active_create",
+              "authority": "qrcode_active_create"
+            },
+            {
+              "code": "qrcode_active_details",
+              "authority": "qrcode_active_details"
+            },
+            {
+              "code": "qrcode_active_download",
+              "authority": "qrcode_active_download"
+            },
+            {
+              "code": "qrcode_active_finish",
+              "authority": "qrcode_active_finish"
+            },
+            {
+              "code": "qrcode_active_start",
+              "authority": "qrcode_active_start"
+            },
+            {
+              "code": "qrcode_active_update",
+              "authority": "qrcode_active_update"
+            },
+            {
+              "code": "role_details",
+              "authority": "role_details"
+            },
+            {
+              "code": "role_list",
+              "authority": "role_list"
+            },
+            {
+              "code": "shop",
+              "authority": "shop"
+            },
+            {
+              "code": "shop_create",
+              "authority": "shop_create"
+            },
+            {
+              "code": "shop_finish",
+              "authority": "shop_finish"
+            },
+            {
+              "code": "shop_links",
+              "authority": "shop_links"
+            },
+            {
+              "code": "shop_manager",
+              "authority": "shop_manager"
+            },
+            {
+              "code": "shop_order",
+              "authority": "shop_order"
+            },
+            {
+              "code": "shop_order_audit_nopass",
+              "authority": "shop_order_audit_nopass"
+            },
+            {
+              "code": "shop_order_audit_pass",
+              "authority": "shop_order_audit_pass"
+            },
+            {
+              "code": "shop_order_detail",
+              "authority": "shop_order_detail"
+            },
+            {
+              "code": "shop_product",
+              "authority": "shop_product"
+            },
+            {
+              "code": "shop_start",
+              "authority": "shop_start"
+            },
+            {
+              "code": "shop_update",
+              "authority": "shop_update"
+            },
+            {
+              "code": "showEvaluate",
+              "authority": "showEvaluate"
+            },
+            {
+              "code": "showEvaluate_create",
+              "authority": "showEvaluate_create"
+            },
+            {
+              "code": "showEvaluate_detail",
+              "authority": "showEvaluate_detail"
+            },
+            {
+              "code": "showEvaluate_detail_audit",
+              "authority": "showEvaluate_detail_audit"
+            },
+            {
+              "code": "showEvaluate_detail_auditPass",
+              "authority": "showEvaluate_detail_auditPass"
+            },
+            {
+              "code": "showEvaluate_detail_auditUnPass",
+              "authority": "showEvaluate_detail_auditUnPass"
+            },
+            {
+              "code": "showEvaluate_detail_details",
+              "authority": "showEvaluate_detail_details"
+            },
+            {
+              "code": "showEvaluate_detail_inc",
+              "authority": "showEvaluate_detail_inc"
+            },
+            {
+              "code": "showEvaluate_finish",
+              "authority": "showEvaluate_finish"
+            },
+            {
+              "code": "showEvaluate_look",
+              "authority": "showEvaluate_look"
+            },
+            {
+              "code": "showEvaluate_update",
+              "authority": "showEvaluate_update"
+            },
+            {
+              "code": "showimg",
+              "authority": "showimg"
+            },
+            {
+              "code": "showimg_create",
+              "authority": "showimg_create"
+            },
+            {
+              "code": "showimg_detail",
+              "authority": "showimg_detail"
+            },
+            {
+              "code": "showimg_detail_auditNoPass",
+              "authority": "showimg_detail_auditNoPass"
+            },
+            {
+              "code": "showimg_detail_auditPass",
+              "authority": "showimg_detail_auditPass"
+            },
+            {
+              "code": "showimg_finish",
+              "authority": "showimg_finish"
+            },
+            {
+              "code": "showimg_update",
+              "authority": "showimg_update"
+            },
+            {
+              "code": "signIn_create",
+              "authority": "signIn_create"
+            },
+            {
+              "code": "signIn_detail",
+              "authority": "signIn_detail"
+            },
+            {
+              "code": "signIn_finish",
+              "authority": "signIn_finish"
+            },
+            {
+              "code": "signIn_inc",
+              "authority": "signIn_inc"
+            },
+            {
+              "code": "signIn_look",
+              "authority": "signIn_look"
+            },
+            {
+              "code": "signIn_update",
+              "authority": "signIn_update"
+            },
+            {
+              "code": "templateMsg_switch",
+              "authority": "templateMsg_switch"
+            },
+            {
+              "code": "templateMsg_update",
+              "authority": "templateMsg_update"
+            },
+            {
+              "code": "weixin",
+              "authority": "weixin"
+            },
+            {
+              "code": "wx_autoreply",
+              "authority": "wx_autoreply"
+            },
+            {
+              "code": "wx_code",
+              "authority": "wx_code"
+            },
+            {
+              "code": "wx_custom_menu",
+              "authority": "wx_custom_menu"
+            },
+            {
+              "code": "wx_fodder",
+              "authority": "wx_fodder"
+            },
+            {
+              "code": "wx_pay",
+              "authority": "wx_pay"
+            },
+            {
+              "code": "wx_realmsg",
+              "authority": "wx_realmsg"
+            },
+            {
+              "code": "wx_send_msg",
+              "authority": "wx_send_msg"
+            },
+            {
+              "code": "wx_setting",
+              "authority": "wx_setting"
+            },
+            {
+              "code": "wx_templateMsg",
+              "authority": "wx_templateMsg"
+            }
+          ],
+          "details": null,
+          "authenticated": true,
+          "principal": "yt9999999",
+          "credentials": null,
+          "enable": true,
+          "admin": {
+            "id": 63,
+            "parentId": 0,
+            "appId": 2,
+            "userName": "yt9999999",
+            "password": "$2a$10$t1Q4yVSW.OAC3/nnO2tdAOzzxfqywz7NYh6Z1XFrCUWJviKlb5zAm",
+            "realName": "",
+            "avatar": "",
+            "jobNumber": "",
+            "mobile": "15355470387",
+            "status": 1,
+            "createTime": 1565955133000,
+            "packageId": 3,
+            "packageStatus": 0,
+            "auditStatus": 2,
+            "auditRemark": "111"
+          },
+          "roles": [
+            103
+          ],
+          "version": "Fri May 08 16:04:34 CST 2020",
+          "permissionVos": [
+            {
+              "id": 1,
+              "type": "MENU",
+              "name": "首页",
+              "url": "/",
+              "code": "index",
+              "sort": 1,
+              "createTime": 1554739200000,
+              "icon": "home",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [],
+              "pid": 0
+            },
+            {
+              "id": 2,
+              "type": "MENU",
+              "name": "公众号",
+              "url": "/weixin",
+              "code": "weixin",
+              "sort": 2,
+              "createTime": 1554739200000,
+              "icon": "message",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 8,
+                  "type": "MENU",
+                  "name": "自定义菜单",
+                  "url": "/weixin/custom-menu",
+                  "code": "wx_custom_menu",
+                  "sort": 201,
+                  "createTime": 1554959080000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 9,
+                  "type": "MENU",
+                  "name": "自动回复",
+                  "url": "/weixin/autoreply",
+                  "code": "wx_autoreply",
+                  "sort": 202,
+                  "createTime": 1554959266000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 115,
+                  "type": "MENU",
+                  "name": "模板消息",
+                  "url": "/weixin/templateMsg",
+                  "code": "wx_templateMsg",
+                  "sort": 203,
+                  "createTime": 1574917670000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 118,
+                      "type": "BTN",
+                      "name": "模板消息-开关",
+                      "url": "/weixin/templateMsg/switch",
+                      "code": "templateMsg_switch",
+                      "sort": 9999,
+                      "createTime": 1574905194000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 115
+                    },
+                    {
+                      "id": 119,
+                      "type": "BTN",
+                      "name": "模板消息-编辑",
+                      "url": "/weixin/templateMsg/update",
+                      "code": "templateMsg_update",
+                      "sort": 9999,
+                      "createTime": 1574905194000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 115
+                    }
+                  ],
+                  "pid": 2
+                },
+                {
+                  "id": 10,
+                  "type": "MENU",
+                  "name": "实时信息",
+                  "url": "/weixin/realmsg",
+                  "code": "wx_realmsg",
+                  "sort": 204,
+                  "createTime": 1554959268000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 11,
+                  "type": "MENU",
+                  "name": "素材管理",
+                  "url": "/weixin/fodder",
+                  "code": "wx_fodder",
+                  "sort": 205,
+                  "createTime": 1554959270000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 12,
+                  "type": "MENU",
+                  "name": "消息群发",
+                  "url": "/weixin/mass-send-msg",
+                  "code": "wx_send_msg",
+                  "sort": 206,
+                  "createTime": 1554959320000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 121,
+                  "type": "MENU",
+                  "name": "智能二维码",
+                  "url": "/weixin/mindQrcode",
+                  "code": "mindQrcode",
+                  "sort": 207,
+                  "createTime": 1575517431000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 122,
+                      "type": "BTN",
+                      "name": "模板消息-新增",
+                      "url": "/weixin/templateMsg/create",
+                      "code": "mindQrcode_create",
+                      "sort": 9999,
+                      "createTime": 1575517434000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 121
+                    },
+                    {
+                      "id": 123,
+                      "type": "BTN",
+                      "name": "模板消息-编辑",
+                      "url": "/weixin/templateMsg/update",
+                      "code": "mindQrcode_update",
+                      "sort": 9999,
+                      "createTime": 1575517434000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 121
+                    },
+                    {
+                      "id": 124,
+                      "type": "BTN",
+                      "name": "模板消息-详情",
+                      "url": "/weixin/templateMsg/details",
+                      "code": "mindQrcode_details",
+                      "sort": 9999,
+                      "createTime": 1575517434000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 121
+                    }
+                  ],
+                  "pid": 2
+                },
+                {
+                  "id": 13,
+                  "type": "MENU",
+                  "name": "参数二维码",
+                  "url": "/weixin/code",
+                  "code": "wx_code",
+                  "sort": 208,
+                  "createTime": 1554959403000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                },
+                {
+                  "id": 14,
+                  "type": "MENU",
+                  "name": "微信支付",
+                  "url": "/weixin/pay",
+                  "code": "wx_pay",
+                  "sort": 209,
+                  "createTime": 1554959463000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 2
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 3,
+              "type": "MENU",
+              "name": "粉丝管理",
+              "url": "/fans",
+              "code": "fans_manager",
+              "sort": 3,
+              "createTime": 1554739200000,
+              "icon": "smile",
+              "isWxauth": 1,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 15,
+                  "type": "MENU",
+                  "name": "粉丝列表",
+                  "url": "/fans/list",
+                  "code": "fans_list",
+                  "sort": 301,
+                  "createTime": 1554959482000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 30,
+                      "type": "BTN",
+                      "name": "粉丝列表-详情",
+                      "url": "/fans/list/details",
+                      "code": "btn_fans_details",
+                      "sort": 9999,
+                      "createTime": 1554959482000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 150,
+                      "type": "BTN",
+                      "name": "粉丝列表-编辑标签",
+                      "url": "/fans/list/updateTag",
+                      "code": "btn_fans_updateTag",
+                      "sort": 9999,
+                      "createTime": 1577682682000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 151,
+                      "type": "BTN",
+                      "name": "粉丝列表-修改备注",
+                      "url": "/fans/list/updateRemark",
+                      "code": "btn_fans_updateRemark",
+                      "sort": 9999,
+                      "createTime": 1577682682000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 152,
+                      "type": "BTN",
+                      "name": "粉丝列表-打标签",
+                      "url": "/fans/list/tag",
+                      "code": "btn_fans_tag",
+                      "sort": 9999,
+                      "createTime": 1577682682000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 153,
+                      "type": "BTN",
+                      "name": "粉丝列表-加黑名单",
+                      "url": "/fans/list/black",
+                      "code": "btn_fans_black",
+                      "sort": 9999,
+                      "createTime": 1577682682000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 154,
+                      "type": "BTN",
+                      "name": "粉丝列表-移除黑名单",
+                      "url": "/fans/list/unBlack",
+                      "code": "btn_fans_unBlack",
+                      "sort": 9999,
+                      "createTime": 1577682682000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    },
+                    {
+                      "id": 160,
+                      "type": "BTN",
+                      "name": "粉丝列表-黑名单详情",
+                      "url": "/fans/list/blackList",
+                      "code": "btn_fans_blackList",
+                      "sort": 9999,
+                      "createTime": 1577769082000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 15
+                    }
+                  ],
+                  "pid": 3
+                },
+                {
+                  "id": 16,
+                  "type": "MENU",
+                  "name": "标签管理",
+                  "url": "/fans/tags",
+                  "code": "fans_tags",
+                  "sort": 302,
+                  "createTime": 1554959660000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 3
+                },
+                {
+                  "id": 144,
+                  "type": "MENU",
+                  "name": "会员等级",
+                  "url": "/fans/memberGrade",
+                  "code": "fans_memberGrade",
+                  "sort": 303,
+                  "createTime": 1577682860000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 145,
+                      "type": "BTN",
+                      "name": "会员等级-新增",
+                      "url": "/fans/memberGrade/create",
+                      "code": "fans_memberGrade_create",
+                      "sort": 9999,
+                      "createTime": 1577685282000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 144
+                    },
+                    {
+                      "id": 146,
+                      "type": "BTN",
+                      "name": "会员等级-编辑",
+                      "url": "/fans/memberGrade/update",
+                      "code": "fans_memberGrade_update",
+                      "sort": 9999,
+                      "createTime": 1577685282000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 144
+                    },
+                    {
+                      "id": 147,
+                      "type": "BTN",
+                      "name": "会员等级-删除",
+                      "url": "/fans/memberGrade/delete",
+                      "code": "fans_memberGrade_delete",
+                      "sort": 9999,
+                      "createTime": 1577685282000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 144
+                    }
+                  ],
+                  "pid": 3
+                },
+                {
+                  "id": 148,
+                  "type": "MENU",
+                  "name": "会员中心",
+                  "url": "/fans/memberTask",
+                  "code": "fans_memberTask",
+                  "sort": 304,
+                  "createTime": 1577682860000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 149,
+                      "type": "BTN",
+                      "name": "会员中心-保存",
+                      "url": "/fans/memberTask/save",
+                      "code": "fans_memberGrade_save",
+                      "sort": 9999,
+                      "createTime": 1577685282000,
+                      "icon": "",
+                      "isWxauth": 1,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 148
+                    }
+                  ],
+                  "pid": 3
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 4,
+              "type": "MENU",
+              "name": "营销中心",
+              "url": "/marketing",
+              "code": "marketing_manager",
+              "sort": 4,
+              "createTime": 1554739200000,
+              "icon": "gift",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 17,
+                  "type": "MENU",
+                  "name": "订单返利",
+                  "url": "/marketing/orderActivities",
+                  "code": "order_activities",
+                  "sort": 401,
+                  "createTime": 1554959850000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 31,
+                      "type": "BTN",
+                      "name": "订单返利-新增",
+                      "url": "/marketing/orderActivities/addactive",
+                      "code": "btn_active_add",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 32,
+                      "type": "BTN",
+                      "name": "订单返利-详情",
+                      "url": "/marketing/orderActivities/details",
+                      "code": "btn_active_details",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 33,
+                      "type": "BTN",
+                      "name": "订单返利-编辑",
+                      "url": "/marketing/orderActivities/edit",
+                      "code": "btn_active_edit",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 34,
+                      "type": "BTN",
+                      "name": "订单返利-结束",
+                      "url": "/marketing/orderActivities/end",
+                      "code": "btn_active_end",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 35,
+                      "type": "BTN",
+                      "name": "订单返利-录入订单",
+                      "url": "/marketing/orderActivities/import",
+                      "code": "btn_active_import",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 36,
+                      "type": "BTN",
+                      "name": "订单返利-审核通过",
+                      "url": "/marketing/orderActivities/pass",
+                      "code": "btn_active_pass",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    },
+                    {
+                      "id": 37,
+                      "type": "BTN",
+                      "name": "订单返利-审核拒绝",
+                      "url": "/marketing/orderActivities/refuse",
+                      "code": "btn_active_refuse",
+                      "sort": 9999,
+                      "createTime": 1554959850000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 17
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 39,
+                  "type": "MENU",
+                  "name": "红包返现",
+                  "url": "/marketing/aftersale",
+                  "code": "after_sale",
+                  "sort": 402,
+                  "createTime": 1568873499000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 40,
+                      "type": "BTN",
+                      "name": "红包返现-新增",
+                      "url": "/marketing/aftersale/addactive",
+                      "code": "btn_after_sale_add",
+                      "sort": 9999,
+                      "createTime": 1569222559000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 41,
+                      "type": "BTN",
+                      "name": "红包返现-编辑",
+                      "url": "/marketing/aftersale/edit",
+                      "code": "btn_after_sale_edit",
+                      "sort": 9999,
+                      "createTime": 1569222562000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 42,
+                      "type": "BTN",
+                      "name": "红包返现-结束",
+                      "url": "/marketing/aftersale/end",
+                      "code": "btn_after_sale_end",
+                      "sort": 9999,
+                      "createTime": 1569222565000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 43,
+                      "type": "BTN",
+                      "name": "红包返现-详情",
+                      "url": "/marketing/aftersale/details",
+                      "code": "btn_after_sale_details",
+                      "sort": 9999,
+                      "createTime": 1569222569000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 44,
+                      "type": "BTN",
+                      "name": "红包返现-活动详情",
+                      "url": "/marketing/aftersale/activedetails",
+                      "code": "btn_after_sale_activedetails",
+                      "sort": 9999,
+                      "createTime": 1569222679000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 45,
+                      "type": "BTN",
+                      "name": "红包返现-活动详情-重新发放",
+                      "url": "/marketing/aftersale/activedetails/replay",
+                      "code": "btn_after_sale_activedetails_reply",
+                      "sort": 9999,
+                      "createTime": 1569222676000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 46,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情",
+                      "url": "/marketing/aftersale/orderdetails",
+                      "code": "btn_after_sale_order_details",
+                      "sort": 9999,
+                      "createTime": 1569222674000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 47,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-批量导入",
+                      "url": "/marketing/aftersale/orderdetails/export",
+                      "code": "btn_after_sale_export",
+                      "sort": 9999,
+                      "createTime": 1569222671000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 48,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-逐个添加",
+                      "url": "/marketing/aftersale/orderdetails/addsingle",
+                      "code": "btn_after_sale_add_single",
+                      "sort": 9999,
+                      "createTime": 1569222581000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 49,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-审核通过",
+                      "url": "/marketing/aftersale/orderdetails/auditpass",
+                      "code": "btn_after_sale_audit_pass",
+                      "sort": 9999,
+                      "createTime": 1569222578000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 50,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-审核不通过",
+                      "url": "/marketing/aftersale/orderdetails/auditnopass",
+                      "code": "btn_after_sale_audit_no_pass",
+                      "sort": 9999,
+                      "createTime": 1569222576000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 51,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-复制链接",
+                      "url": "/marketing/aftersale/orderdetails/link",
+                      "code": "btn_after_sale_link",
+                      "sort": 9999,
+                      "createTime": 1569222574000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    },
+                    {
+                      "id": 52,
+                      "type": "BTN",
+                      "name": "红包返现-订单详情-删除",
+                      "url": "/marketing/aftersale/orderdetails/delete",
+                      "code": "btn_after_sale_delete",
+                      "sort": 9999,
+                      "createTime": 1569222571000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 39
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 125,
+                  "type": "MENU",
+                  "name": "晒评价",
+                  "url": "/marketing/showEvaluate",
+                  "code": "showEvaluate",
+                  "sort": 403,
+                  "createTime": 1575971202000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 126,
+                      "type": "BTN",
+                      "name": "晒评价-详情",
+                      "url": "/marketing/showEvaluate/detail",
+                      "code": "showEvaluate_detail",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 127,
+                      "type": "BTN",
+                      "name": "晒评价-新增",
+                      "url": "/marketing/showEvaluate/create",
+                      "code": "showEvaluate_create",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 128,
+                      "type": "BTN",
+                      "name": "晒评价-编辑",
+                      "url": "/marketing/showEvaluate/update",
+                      "code": "showEvaluate_update",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 129,
+                      "type": "BTN",
+                      "name": "晒评价-查看",
+                      "url": "/marketing/showEvaluate/look",
+                      "code": "showEvaluate_look",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 130,
+                      "type": "BTN",
+                      "name": "晒评价-结束",
+                      "url": "/marketing/showEvaluate/finish",
+                      "code": "showEvaluate_finish",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 131,
+                      "type": "BTN",
+                      "name": "晒评价-详情-追加",
+                      "url": "/marketing/showEvaluate/detail/inc",
+                      "code": "showEvaluate_detail_inc",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 132,
+                      "type": "BTN",
+                      "name": "晒评价-详情-审核通过",
+                      "url": "/marketing/showEvaluate/auditPass",
+                      "code": "showEvaluate_detail_auditPass",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 133,
+                      "type": "BTN",
+                      "name": "晒评价-详情-审核不通过",
+                      "url": "/marketing/showEvaluate/auditUnPass",
+                      "code": "showEvaluate_detail_auditUnPass",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 134,
+                      "type": "BTN",
+                      "name": "晒评价-详情-查看详情",
+                      "url": "/marketing/showEvaluate/detail/details",
+                      "code": "showEvaluate_detail_details",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    },
+                    {
+                      "id": 135,
+                      "type": "BTN",
+                      "name": "晒评价-详情-审核",
+                      "url": "/marketing/showEvaluate/audit",
+                      "code": "showEvaluate_detail_audit",
+                      "sort": 9999,
+                      "createTime": 1575971226000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 125
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 72,
+                  "type": "MENU",
+                  "name": "晒图有礼",
+                  "url": "/marketing/showimg",
+                  "code": "showimg",
+                  "sort": 404,
+                  "createTime": 1571966121000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 73,
+                      "type": "BTN",
+                      "name": "晒图有礼-详情",
+                      "url": "/marketing/showimg/detail",
+                      "code": "showimg_detail",
+                      "sort": 9999,
+                      "createTime": 1571966124000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    },
+                    {
+                      "id": 74,
+                      "type": "BTN",
+                      "name": "晒图有礼-新增",
+                      "url": "/marketing/showimg/create",
+                      "code": "showimg_create",
+                      "sort": 9999,
+                      "createTime": 1571966151000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    },
+                    {
+                      "id": 77,
+                      "type": "BTN",
+                      "name": "晒图有礼-编辑",
+                      "url": "/marketing/showimg/update",
+                      "code": "showimg_update",
+                      "sort": 9999,
+                      "createTime": 1572269713000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    },
+                    {
+                      "id": 78,
+                      "type": "BTN",
+                      "name": "晒图有礼-结束",
+                      "url": "/marketing/showimg/finish",
+                      "code": "showimg_finish",
+                      "sort": 9999,
+                      "createTime": 1572269715000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    },
+                    {
+                      "id": 85,
+                      "type": "BTN",
+                      "name": "晒图有礼-详情-审核通过",
+                      "url": "/marketing/showimg/detail/auditPass",
+                      "code": "showimg_detail_auditPass",
+                      "sort": 9999,
+                      "createTime": 1572270178000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    },
+                    {
+                      "id": 86,
+                      "type": "BTN",
+                      "name": "晒图有礼-详情-审核不通过",
+                      "url": "/marketing/showimg/detail/auditNoPass",
+                      "code": "showimg_detail_auditNoPass",
+                      "sort": 9999,
+                      "createTime": 1572270178000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 72
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 101,
+                  "type": "MENU",
+                  "name": "一物一码",
+                  "url": "/marketing/qrCodeActive",
+                  "code": "qrcode_active",
+                  "sort": 405,
+                  "createTime": 1574232425000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 102,
+                      "type": "BTN",
+                      "name": "一物一码-新增",
+                      "url": "/marking/qrCodeActive/create",
+                      "code": "qrcode_active_create",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 103,
+                      "type": "BTN",
+                      "name": "一物一码-编辑",
+                      "url": "/marking/qrCodeActive/update",
+                      "code": "qrcode_active_update",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 104,
+                      "type": "BTN",
+                      "name": "一物一码-激活",
+                      "url": "/marking/qrCodeActive/start",
+                      "code": "qrcode_active_start",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 105,
+                      "type": "BTN",
+                      "name": "一物一码-作废",
+                      "url": "/marking/qrCodeActive/finish",
+                      "code": "qrcode_active_finish",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 106,
+                      "type": "BTN",
+                      "name": "一物一码-导出",
+                      "url": "/marking/qrCodeActive/download",
+                      "code": "qrcode_active_download",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 107,
+                      "type": "BTN",
+                      "name": "一物一码-查看详情",
+                      "url": "/marking/qrCodeActive/details",
+                      "code": "qrcode_active_details",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    },
+                    {
+                      "id": 108,
+                      "type": "BTN",
+                      "name": "一物一码-效果分析",
+                      "url": "/marking/qrCodeActive/analyze",
+                      "code": "qrcode_active_analyze",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 101
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 109,
+                  "type": "MENU",
+                  "name": "每日签到",
+                  "url": "/marketing/signIn",
+                  "code": "marketing_signIn",
+                  "sort": 406,
+                  "createTime": 1574870400000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 110,
+                      "type": "BTN",
+                      "name": "每日签到-新增",
+                      "url": "/marking/signIn/create",
+                      "code": "signIn_create",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    },
+                    {
+                      "id": 111,
+                      "type": "BTN",
+                      "name": "每日签到-详情",
+                      "url": "/marking/signIn/detail",
+                      "code": "signIn_detail",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    },
+                    {
+                      "id": 112,
+                      "type": "BTN",
+                      "name": "每日签到-编辑",
+                      "url": "/marking/signIn/update",
+                      "code": "signIn_update",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    },
+                    {
+                      "id": 113,
+                      "type": "BTN",
+                      "name": "每日签到-结束",
+                      "url": "/marking/signIn/finish",
+                      "code": "signIn_finish",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    },
+                    {
+                      "id": 114,
+                      "type": "BTN",
+                      "name": "每日签到-查看",
+                      "url": "/marking/signIn/look",
+                      "code": "signIn_look",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    },
+                    {
+                      "id": 120,
+                      "type": "BTN",
+                      "name": "每日签到-追加",
+                      "url": "/marking/signIn/inc",
+                      "code": "signIn_inc",
+                      "sort": 9999,
+                      "createTime": 1574232646000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 109
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 53,
+                  "type": "MENU",
+                  "name": "转盘抽奖",
+                  "url": "/marketing/draw",
+                  "code": "draw",
+                  "sort": 407,
+                  "createTime": 1569291127000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 54,
+                      "type": "BTN",
+                      "name": "转盘抽奖-新增",
+                      "url": "/marketing/draw/create",
+                      "code": "draw_create",
+                      "sort": 9999,
+                      "createTime": 1569291164000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 53
+                    },
+                    {
+                      "id": 55,
+                      "type": "BTN",
+                      "name": "转盘抽奖-详情",
+                      "url": "/marketing/draw/detail",
+                      "code": "draw_detail",
+                      "sort": 9999,
+                      "createTime": 1569291164000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 53
+                    },
+                    {
+                      "id": 56,
+                      "type": "BTN",
+                      "name": "转盘抽奖-编辑",
+                      "url": "/marketing/draw/update",
+                      "code": "draw_update",
+                      "sort": 9999,
+                      "createTime": 1569291164000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 53
+                    },
+                    {
+                      "id": 57,
+                      "type": "BTN",
+                      "name": "转盘抽奖-结束",
+                      "url": "/marketing/draw/finish",
+                      "code": "draw_finish",
+                      "sort": 9999,
+                      "createTime": 1569291164000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 53
+                    },
+                    {
+                      "id": 58,
+                      "type": "BTN",
+                      "name": "转盘抽奖-详情追加",
+                      "url": "/marketing/draw/detail/inc",
+                      "code": "draw_detail_inc",
+                      "sort": 9999,
+                      "createTime": 1569291164000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 53
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 90,
+                  "type": "MENU",
+                  "name": "秒杀商城",
+                  "url": "/marketing/shop",
+                  "code": "shop",
+                  "sort": 408,
+                  "createTime": 1573440383000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 91,
+                      "type": "BTN",
+                      "name": "秒杀商城-新建",
+                      "url": "/marketing/shop/create",
+                      "code": "shop_create",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 92,
+                      "type": "BTN",
+                      "name": "秒杀商城-编辑",
+                      "url": "/marketing/shop/update",
+                      "code": "shop_update",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 93,
+                      "type": "BTN",
+                      "name": "秒杀商城-下架",
+                      "url": "/marketing/shop/finish",
+                      "code": "shop_finish",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 94,
+                      "type": "BTN",
+                      "name": "秒杀商城-上架",
+                      "url": "/marketing/shop/start",
+                      "code": "shop_start",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 95,
+                      "type": "BTN",
+                      "name": "秒杀商城-查看链接",
+                      "url": "/marketing/shop/links",
+                      "code": "shop_links",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 96,
+                      "type": "BTN",
+                      "name": "秒杀商城-查看商品",
+                      "url": "/marketing/shop/product",
+                      "code": "shop_product",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 97,
+                      "type": "BTN",
+                      "name": "秒杀商城-订单",
+                      "url": "/marking/order",
+                      "code": "shop_order",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 98,
+                      "type": "BTN",
+                      "name": "秒杀商城-审核通过",
+                      "url": "/marketing/shop/order/auditPass",
+                      "code": "shop_order_audit_pass",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 99,
+                      "type": "BTN",
+                      "name": "秒杀商城-审核不通过",
+                      "url": "/marketing/shop/order/auditNoPass",
+                      "code": "shop_order_audit_nopass",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    },
+                    {
+                      "id": 100,
+                      "type": "BTN",
+                      "name": "秒杀商城-订单详情",
+                      "url": "/marketing/shop/order/detail",
+                      "code": "shop_order_detail",
+                      "sort": 9999,
+                      "createTime": 1573440383000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 90
+                    }
+                  ],
+                  "pid": 4
+                },
+                {
+                  "id": 38,
+                  "type": "MENU",
+                  "name": "黑名单",
+                  "url": "/marketing/black",
+                  "code": "black_list",
+                  "sort": 9999,
+                  "createTime": 1567478007000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 4
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 161,
+              "type": "MENU",
+              "name": "积分商城",
+              "url": "/integralShop",
+              "code": "integralShop",
+              "sort": 5,
+              "createTime": 1578463729000,
+              "icon": "shop",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 162,
+                  "type": "MENU",
+                  "name": "换购管理",
+                  "url": "/integralShop/manage",
+                  "code": "integralShop_manage",
+                  "sort": 501,
+                  "createTime": 1578463729000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 163,
+                      "type": "BTN",
+                      "name": "换购管理-新建",
+                      "url": "/integralShop/manage/create",
+                      "code": "integralShop_manage_create",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 162
+                    },
+                    {
+                      "id": 164,
+                      "type": "BTN",
+                      "name": "换购管理-编辑",
+                      "url": "/integralShop/manage/update",
+                      "code": "integralShop_manage_update",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 162
+                    },
+                    {
+                      "id": 165,
+                      "type": "BTN",
+                      "name": "换购管理-上架",
+                      "url": "/integralShop/manage/putaway",
+                      "code": "integralShop_manage_putaway",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 162
+                    },
+                    {
+                      "id": 166,
+                      "type": "BTN",
+                      "name": "换购管理-下架",
+                      "url": "/integralShop/manage/sellout",
+                      "code": "integralShop_manage_sellout",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 162
+                    },
+                    {
+                      "id": 167,
+                      "type": "BTN",
+                      "name": "换购管理-查看详情",
+                      "url": "/integralShop/manage/detail",
+                      "code": "integralShop_manage_detail",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 162
+                    }
+                  ],
+                  "pid": 161
+                },
+                {
+                  "id": 168,
+                  "type": "MENU",
+                  "name": "兑换记录",
+                  "url": "/integralShop/record",
+                  "code": "integralShop_record",
+                  "sort": 502,
+                  "createTime": 1578463729000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 169,
+                      "type": "BTN",
+                      "name": "兑换记录-上传物流单号",
+                      "url": "/integralShop/reocrd/upload",
+                      "code": "integralShop_record_upload",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    },
+                    {
+                      "id": 170,
+                      "type": "BTN",
+                      "name": "兑换记录-查看邮寄信息",
+                      "url": "/integralShop/reocrd/info",
+                      "code": "integralShop_record_info",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    },
+                    {
+                      "id": 171,
+                      "type": "BTN",
+                      "name": "兑换记录-重新发放",
+                      "url": "/integralShop/reocrd/resend",
+                      "code": "integralShop_record_resend",
+                      "sort": 9999,
+                      "createTime": 1578463729000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    },
+                    {
+                      "id": 172,
+                      "type": "BTN",
+                      "name": "兑换记录-审核通过",
+                      "url": "/integralShop/reocrd/auditPass",
+                      "code": "integralShop_record_auditPass",
+                      "sort": 9999,
+                      "createTime": 1579154929000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    },
+                    {
+                      "id": 173,
+                      "type": "BTN",
+                      "name": "兑换记录-审核不通过",
+                      "url": "/integralShop/reocrd/auditUnpass",
+                      "code": "integralShop_record_auditUnpass",
+                      "sort": 9999,
+                      "createTime": 1579154929000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    },
+                    {
+                      "id": 174,
+                      "type": "BTN",
+                      "name": "兑换记录-订单详情",
+                      "url": "/integralShop/reocrd/orderDetails",
+                      "code": "integralShop_record_orderDetails",
+                      "sort": 9999,
+                      "createTime": 1579154929000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 168
+                    }
+                  ],
+                  "pid": 161
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 116,
+              "type": "MENU",
+              "name": "奖品管理",
+              "url": "/prize",
+              "code": "prize",
+              "sort": 6,
+              "createTime": 1574870400000,
+              "icon": "trophy",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 59,
+                  "type": "MENU",
+                  "name": "营销红包",
+                  "url": "/prize/redEnvelopes",
+                  "code": "prize_red",
+                  "sort": 601,
+                  "createTime": 1569291317000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 60,
+                      "type": "BTN",
+                      "name": "营销红包-新增",
+                      "url": "/prize/redEnvelopes/add",
+                      "code": "prize_red_add",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    },
+                    {
+                      "id": 61,
+                      "type": "BTN",
+                      "name": "营销红包-记录",
+                      "url": "/prize/redEnvelopes/redRecord",
+                      "code": "prize_red_redRecord",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    },
+                    {
+                      "id": 62,
+                      "type": "BTN",
+                      "name": "营销红包-追加",
+                      "url": "/prize/redEnvelopes/inc",
+                      "code": "prize_red_inc",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    },
+                    {
+                      "id": 63,
+                      "type": "BTN",
+                      "name": "营销红包-结算",
+                      "url": "/prize/redEnvelopes/settlement",
+                      "code": "prize_red_settlement",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    },
+                    {
+                      "id": 64,
+                      "type": "BTN",
+                      "name": "营销红包-删除",
+                      "url": "/prize/redEnvelopes/delete",
+                      "code": "prize_red_delete",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    },
+                    {
+                      "id": 87,
+                      "type": "BTN",
+                      "name": "营销红包-重新发送",
+                      "url": "/prize/redEnvelopes/resend",
+                      "code": "prize_red_resend",
+                      "sort": 9999,
+                      "createTime": 1572270291000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 59
+                    }
+                  ],
+                  "pid": 116
+                },
+                {
+                  "id": 117,
+                  "type": "MENU",
+                  "name": "积分",
+                  "url": "/prize/integral",
+                  "code": "prize_integral",
+                  "sort": 602,
+                  "createTime": 1574903796000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 155,
+                      "type": "BTN",
+                      "name": "积分-积分统计",
+                      "url": "/prize/integral/statistics",
+                      "code": "prize_integral_statistics",
+                      "sort": 9999,
+                      "createTime": 1577668596000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [
+                        {
+                          "id": 159,
+                          "type": "BTN",
+                          "name": "积分-积分统计-积分设置",
+                          "url": "/prize/integral/statistics/config",
+                          "code": "prize_integral_config",
+                          "sort": 9999,
+                          "createTime": 1577668596000,
+                          "icon": "",
+                          "isWxauth": 0,
+                          "isNew": 0,
+                          "flag": 1,
+                          "subList": [],
+                          "pid": 155
+                        }
+                      ],
+                      "pid": 117
+                    },
+                    {
+                      "id": 156,
+                      "type": "BTN",
+                      "name": "积分-发放明细",
+                      "url": "/prize/integral/grant",
+                      "code": "prize_integral_grant",
+                      "sort": 9999,
+                      "createTime": 1577668596000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [
+                        {
+                          "id": 158,
+                          "type": "BTN",
+                          "name": "积分-发放明细-重新发放",
+                          "url": "/prize/integral/grant/restart",
+                          "code": "prize_integral_grant_restart",
+                          "sort": 9999,
+                          "createTime": 1577668596000,
+                          "icon": "",
+                          "isWxauth": 0,
+                          "isNew": 0,
+                          "flag": 1,
+                          "subList": [],
+                          "pid": 156
+                        }
+                      ],
+                      "pid": 117
+                    },
+                    {
+                      "id": 157,
+                      "type": "BTN",
+                      "name": "积分-消耗明细",
+                      "url": "/prize/integral/used",
+                      "code": "prize_integral_used",
+                      "sort": 9999,
+                      "createTime": 1577668596000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 117
+                    }
+                  ],
+                  "pid": 116
+                },
+                {
+                  "id": 65,
+                  "type": "MENU",
+                  "name": "营销优惠券",
+                  "url": "/prize/coupon",
+                  "code": "prize_coupon",
+                  "sort": 603,
+                  "createTime": 1569291317000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 66,
+                      "type": "BTN",
+                      "name": "营销优惠券新增",
+                      "url": "/prize/coupon/add",
+                      "code": "prize_coupon_add",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    },
+                    {
+                      "id": 67,
+                      "type": "BTN",
+                      "name": "营销优惠券-记录",
+                      "url": "/prize/coupon/couponRecord",
+                      "code": "prize_coupon_couponRecord",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    },
+                    {
+                      "id": 68,
+                      "type": "BTN",
+                      "name": "营销优惠券-追加",
+                      "url": "/prize/coupon/inc",
+                      "code": "prize_coupon_inc",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    },
+                    {
+                      "id": 69,
+                      "type": "BTN",
+                      "name": "营销优惠券-结算",
+                      "url": "/prize/coupon/settlement",
+                      "code": "prize_coupon_settlement",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    },
+                    {
+                      "id": 70,
+                      "type": "BTN",
+                      "name": "营销优惠券-删除",
+                      "url": "/prize/coupon/delete",
+                      "code": "prize_coupon_delete",
+                      "sort": 9999,
+                      "createTime": 1569291349000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    },
+                    {
+                      "id": 88,
+                      "type": "BTN",
+                      "name": "营销优惠券-重新发送",
+                      "url": "/prize/coupon/resend",
+                      "code": "prize_coupon_resend",
+                      "sort": 9999,
+                      "createTime": 1572270318000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 65
+                    }
+                  ],
+                  "pid": 116
+                },
+                {
+                  "id": 75,
+                  "type": "MENU",
+                  "name": "实物礼品",
+                  "url": "/prize/goods",
+                  "code": "prize_goods",
+                  "sort": 604,
+                  "createTime": 1571966196000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 76,
+                      "type": "BTN",
+                      "name": "实物礼品-详情",
+                      "url": "/prize/goods/goodDetail",
+                      "code": "prize_goods_goodDetail",
+                      "sort": 9999,
+                      "createTime": 1571966270000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 79,
+                      "type": "BTN",
+                      "name": "实物礼品-新增",
+                      "url": "/prize/goods/create",
+                      "code": "prize_goods_create",
+                      "sort": 9999,
+                      "createTime": 1572269839000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 80,
+                      "type": "BTN",
+                      "name": "实物礼品-追加",
+                      "url": "/prize/goods/inc",
+                      "code": "prize_goods_inc",
+                      "sort": 9999,
+                      "createTime": 1572269866000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 81,
+                      "type": "BTN",
+                      "name": "实物礼品-删除",
+                      "url": "/prize/goods/delete",
+                      "code": "prize_goods_delete",
+                      "sort": 9999,
+                      "createTime": 1572269889000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 82,
+                      "type": "BTN",
+                      "name": "实物礼品-记录",
+                      "url": "/prize/goods/record",
+                      "code": "prize_goods_record",
+                      "sort": 9999,
+                      "createTime": 1572269917000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 83,
+                      "type": "BTN",
+                      "name": "实物礼品-记录-上传物流单号",
+                      "url": "/prize/goods/record/submitLog",
+                      "code": "prize_goods_record_submitLog",
+                      "sort": 9999,
+                      "createTime": 1572269998000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 84,
+                      "type": "BTN",
+                      "name": "实物礼品-记录-查看邮寄信息",
+                      "url": "/prize/goods/record/checkInfo",
+                      "code": "prize_goods_record_checkInfo",
+                      "sort": 9999,
+                      "createTime": 1572269998000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    },
+                    {
+                      "id": 89,
+                      "type": "BTN",
+                      "name": "实物礼品-重新发送",
+                      "url": "/prize/goods/resend",
+                      "code": "prize_goods_resend",
+                      "sort": 9999,
+                      "createTime": 1572270342000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 75
+                    }
+                  ],
+                  "pid": 116
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 5,
+              "type": "MENU",
+              "name": "数据分析",
+              "url": "/dataAnalysis",
+              "code": "dataAnalysis",
+              "sort": 7,
+              "createTime": 1554739200000,
+              "icon": "radar-chart",
+              "isWxauth": 1,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 19,
+                  "type": "MENU",
+                  "name": "图文统计",
+                  "url": "/dataAnalysis/imgtext",
+                  "code": "dataAnalysis_imgtext",
+                  "sort": 701,
+                  "createTime": 1554959851000,
+                  "icon": "",
+                  "isWxauth": 1,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 5
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 6,
+              "type": "MENU",
+              "name": "资产管理",
+              "url": "/asset",
+              "code": "asset_manager",
+              "sort": 8,
+              "createTime": 1554739200000,
+              "icon": "account-book",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 22,
+                  "type": "MENU",
+                  "name": "代发账户",
+                  "url": "/asset/substitute",
+                  "code": "asset_substitute",
+                  "sort": 801,
+                  "createTime": 1554960034000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 138,
+                      "type": "BTN",
+                      "name": "下载数据(账户概览)",
+                      "url": "/asset/substitute/downloadSimple",
+                      "code": "asset_substitute_downloadSimple",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 22
+                    },
+                    {
+                      "id": 139,
+                      "type": "BTN",
+                      "name": "下载数据(代发明细)",
+                      "url": "/asset/substitute/downloadDetail",
+                      "code": "asset_substitute_downloadDetail",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 22
+                    }
+                  ],
+                  "pid": 6
+                },
+                {
+                  "id": 136,
+                  "type": "MENU",
+                  "name": "短信账户",
+                  "url": "/asset/msgAccount",
+                  "code": "asset_msgAccount",
+                  "sort": 802,
+                  "createTime": 1576835174000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 140,
+                      "type": "BTN",
+                      "name": "下载数据(余量记录)",
+                      "url": "/asset/msgAccount/downloadRecord",
+                      "code": "asset_msgAccount_downloadRecord",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 136
+                    },
+                    {
+                      "id": 141,
+                      "type": "BTN",
+                      "name": "下载数据(发送明细)",
+                      "url": "/asset/msgAccount/downloadDetail",
+                      "code": "asset_msgAccount_downloadDetail",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 136
+                    }
+                  ],
+                  "pid": 6
+                },
+                {
+                  "id": 137,
+                  "type": "MENU",
+                  "name": "二维码账户",
+                  "url": "/asset/qrcodeAccount",
+                  "code": "asset_qrcodeAccount",
+                  "sort": 803,
+                  "createTime": 1576835177000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 142,
+                      "type": "BTN",
+                      "name": "下载数据",
+                      "url": "/asset/qrcodeAccount/download",
+                      "code": "asset_qrcodeAccount_download",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 137
+                    }
+                  ],
+                  "pid": 6
+                },
+                {
+                  "id": 23,
+                  "type": "MENU",
+                  "name": "账单明细",
+                  "url": "/asset/adetailed",
+                  "code": "asset_details",
+                  "sort": 804,
+                  "createTime": 1554960034000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [
+                    {
+                      "id": 143,
+                      "type": "BTN",
+                      "name": "下载数据",
+                      "url": "/asset/adetailed/download",
+                      "code": "asset_details_download",
+                      "sort": 9999,
+                      "createTime": 1576835277000,
+                      "icon": "",
+                      "isWxauth": 0,
+                      "isNew": 0,
+                      "flag": 1,
+                      "subList": [],
+                      "pid": 23
+                    }
+                  ],
+                  "pid": 6
+                }
+              ],
+              "pid": 0
+            },
+            {
+              "id": 7,
+              "type": "MENU",
+              "name": "系统管理",
+              "url": "/system",
+              "code": "admin_manager",
+              "sort": 9,
+              "createTime": 1554959084000,
+              "icon": "setting",
+              "isWxauth": 0,
+              "isNew": 0,
+              "flag": 1,
+              "subList": [
+                {
+                  "id": 24,
+                  "type": "MENU",
+                  "name": "账号管理",
+                  "url": "/system/accountmanage",
+                  "code": "admin_manager_child",
+                  "sort": 901,
+                  "createTime": 1555044102000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 7
+                },
+                {
+                  "id": 28,
+                  "type": "MENU",
+                  "name": "公众号配置",
+                  "url": "/system/wxsetting",
+                  "code": "wx_setting",
+                  "sort": 902,
+                  "createTime": 1557112051000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 7
+                },
+                {
+                  "id": 29,
+                  "type": "MENU",
+                  "name": "店铺管理",
+                  "url": "/system/shopmanage",
+                  "code": "shop_manager",
+                  "sort": 903,
+                  "createTime": 1560999376000,
+                  "icon": "",
+                  "isWxauth": 0,
+                  "isNew": 0,
+                  "flag": 1,
+                  "subList": [],
+                  "pid": 7
+                }
+              ],
+              "pid": 0
+            }
+          ],
+          "extParams": {
+            "headerImg": "http://wx.qlogo.cn/mmopen/iblygHt04lItcutGuibZfib46eQj0NEWRGqLvzw1hzqk6NBiaaaet3LzPSIToicBglKegEJkxqAI412Nmfwiah5yAPhWYOH7gfZicmia/0"
+          },
+          "expiresTime": 1588932274548,
+          "name": "yt9999999"
+        },
+        "msg": "获得用户信息成功",
+        "details": null
+      }
+    }
+  },
+  {
+    "description": "获取用户套餐信息",
+    "request": {
+      "uri": "/package/getAdminPackageInfo",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": {
+          "id": 1,
+          "adminId": 63,
+          "appId": 2,
+          "packageId": 3,
+          "packageName": "旗舰版",
+          "packagePrice": 0.30,
+          "packageCoupon": 0.00,
+          "beginTime": 1571217913000,
+          "endTime": 1760606713000,
+          "status": 0,
+          "shopNum": 9999,
+          "codeNum": 100000,
+          "salesman": 4,
+          "firstBeginTime": 1571217913000,
+          "firstLoginTime": 1576831373000,
+          "lastLoginTime": 1588925074000,
+          "remark": null,
+          "createTime": 1565955133000,
+          "updateTime": 1577066289000,
+          "deductionPrice": 1.63,
+          "residueYear": 6
+        },
+        "msg": null,
+        "details": null
+      }
+    }
+  },
+  {
+    "description": "获取活动信息列表接口",
+    "request": {
+      "uri": "/active/selectList",
+      "method": "post",
+      "json": {
+        "appId": 1,
+        "page": 0,
+        "status": null,
+        "size": 10
+      },
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": {
+          "page": 0,
+          "size": 10,
+          "totalItem": 34,
+          "totalPage": 4,
+          "data": [
+            {
+              "id": 106,
+              "type": 0,
+              "appId": 1,
+              "name": "资产测试",
+              "beginTime": 1575200113000,
+              "endTime": 1585654513000,
+              "backUrl": null,
+              "title": "资产测试",
+              "role": "<p>资产测试</p>",
+              "verifyType": 0,
+              "rebateType": 0,
+              "rebateTime": 30,
+              "rebateTimeType": 1,
+              "rebateRatio": 10.00,
+              "brokerage": 2.00,
+              "isAssign": 0,
+              "assignOrders": "",
+              "assignType": 1,
+              "wxCount": 0,
+              "mobileCount": 0,
+              "buyerCount": 0,
+              "productLimit": 0,
+              "isBlack": 0,
+              "shop": "阿匹斯的城堡",
+              "status": 0,
+              "creater": "zmson",
+              "sender": null,
+              "receiveCount": null,
+              "sendCount": null,
+              "sendTotalBalance": null,
+              "shopName": null,
+              "createTime": 1578051487000,
+              "updateTime": 1578051543000,
+              "newFans": 0,
+              "joinFans": 1,
+              "totalAmount": 6.04,
+              "wxOpenName": "情怀造物"
+            }
+          ]
+        },
+        "msg": null,
+        "details": null
+      }
+    }
+  },
+  {
+    "description": "获取店铺信息",
+    "request": {
+      "uri": "/active/getShop",
+      "method": "post",
+      "json": {
+      },
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": [
+          {
+            "id": 1,
+            "adminId": 1,
+            "platform": 0,
+            "taobaoUserId": 4114258900,
+            "sellerNick": "apis2018",
+            "shopName": "阿匹斯的城堡",
+            "startTime": 1583484909000,
+            "endTime": 1608048000000,
+            "authStatus": 1,
+            "remark": null,
+            "createTime": 1565672923000,
+            "updateTime": 1583484909000
+          }
+        ],
+        "msg": null,
+        "details": null
+      }
+    }
+  },
+  {
+    "description": "查询活动详情接口",
+    "request": {
+      "uri": "/active/getOrderList",
+      "method": "post",
+      "json": {
+        "size": 5,
+        "page": 0,
+        "activeFlag": "6GYmawJpti7sVw58uNgfDp"
+      },
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": {
+          "page": 0,
+          "size": 5,
+          "totalItem": 0,
+          "totalPage": 0,
+          "data": []
+        },
+        "msg": null,
+        "details": null
+      }
+    }
+  },
+  {
+    "description": "根据activeFlag查询对应活动商品信息",
+    "request": {
+      "uri": "/active/selectProductList",
+      "method": "post",
+      "json": {
+        "page": 0,
+        "size": 5,
+        "productFlag": "6GYmawJpti7sVw58uNgfDp"
+      },
+      "headers": {
+        "content-type": "application/json",
+        "token": "token_true"
+      }
+    },
+    "response": {
+      "json": {
+        "status": 1,
+        "data": {
+          "page": 0,
+          "size": 5,
+          "totalItem": 0,
+          "totalPage": 0,
+          "data": []
+        },
+        "msg": null,
+        "details": null
+      }
+    }
+  }
+]
